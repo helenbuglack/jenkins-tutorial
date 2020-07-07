@@ -16,8 +16,8 @@ public class MainTutorialJenkinsTest {
     @Test
     public void testNegativeNumber() {
 
-        String result = tutorialJenkins.run(10);
-        Assertions.assertEquals(result, ":D");
+        String result = tutorialJenkins.run(-3);
+        Assertions.assertEquals( ":D", result);
     }
 
     @DisplayName("Run MainTutorialJenkins with number=2")
@@ -25,7 +25,7 @@ public class MainTutorialJenkinsTest {
     public void testEvenNumber() {
 
         String result = tutorialJenkins.run(2);
-        Assertions.assertEquals(result, "Hello, my friend!");
+        Assertions.assertEquals("Hello, my friend!", result);
     }
 
     @DisplayName("Run MainTutorialJenkins with number=3")
@@ -33,6 +33,6 @@ public class MainTutorialJenkinsTest {
     public void testUnevenNumber() {
 
         String result = tutorialJenkins.run(3);
-        Assertions.assertEquals(result, "Goodbye, my friend!");
+        Assertions.assertEquals( "Goodbye, my friend!", result);
     }
 }
