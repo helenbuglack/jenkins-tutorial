@@ -16,7 +16,7 @@ public class MainTutorialJenkinsTest {
     @Test
     public void testNegativeNumber() {
 
-        String result = tutorialJenkins.run(-3);
+        String result = tutorialJenkins.run(10);
         Assertions.assertEquals(result, ":D");
     }
 
