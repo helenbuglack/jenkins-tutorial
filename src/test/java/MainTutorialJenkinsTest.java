@@ -20,11 +20,11 @@ public class MainTutorialJenkinsTest {
         Assertions.assertEquals( ":D", result);
     }
 
-    @DisplayName("Run MainTutorialJenkins with number=2")
+    @DisplayName("Run MainTutorialJenkins with number=4")
     @Test
     public void testEvenNumber() {
 
-        String result = tutorialJenkins.run(2);
+        String result = tutorialJenkins.run(4);
         Assertions.assertEquals("Hello, my friend!", result);
     }
 
